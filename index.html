@@ -117,6 +117,7 @@
       <div class="hidden md:flex items-center gap-8 text-sm">
         <a href="#experience" class="hover:text-white transition" data-i18n="nav_exp">Experience</a>
         <a href="#projects"   class="hover:text-white transition" data-i18n="nav_projects">Work</a>
+        <a href="#personal"   class="hover:text-white transition" data-i18n="nav_personal">Personal</a>
         <a href="#publications" class="hover:text-white transition" data-i18n="nav_pub">Papers</a>
         <a href="#toolbox"    class="hover:text-white transition" data-i18n="nav_tools">Toolbox</a>
         <a href="#contact"    class="hover:text-white transition" data-i18n="nav_contact">Contact</a>
@@ -143,6 +144,7 @@
       <div class="px-6 py-4 flex flex-col gap-4 text-sm">
         <a href="#experience" class="hover:text-white transition" data-i18n="nav_exp">Experience</a>
         <a href="#projects"   class="hover:text-white transition" data-i18n="nav_projects">Work</a>
+        <a href="#personal"   class="hover:text-white transition" data-i18n="nav_personal">Personal</a>
         <a href="#publications" class="hover:text-white transition" data-i18n="nav_pub">Papers</a>
         <a href="#toolbox"    class="hover:text-white transition" data-i18n="nav_tools">Toolbox</a>
         <a href="#contact"    class="hover:text-white transition" data-i18n="nav_contact">Contact</a>
@@ -465,6 +467,61 @@
     </div>
   </section>
 
+  <!-- ============ PERSONAL PROJECTS ============ -->
+  <section id="personal" class="border-t border-white/5 py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="reveal mb-14">
+        <h2 class="font-display font-bold text-white text-3xl sm:text-5xl tracking-tight" data-i18n="pp_h">Personal projects</h2>
+        <p class="mt-3 text-white/50 max-w-xl" data-i18n="pp_sub">Things I build on my own time, because I want to understand how they work.</p>
+      </div>
+
+      <!-- card: jet engine CAD -->
+      <article class="card reveal rounded-2xl border border-white/10 bg-white/[0.02] p-7 sm:p-9">
+        <div class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-white/35 mb-4">
+          <span data-i18n="pp1_tag">SOLIDWORKS · September 2025</span>
+        </div>
+        <h3 class="font-display font-semibold text-white text-xl sm:text-2xl" data-i18n="pp1_t">Jet engine — full CAD assembly, from the nose cone to the nozzle</h3>
+
+        <div class="mt-6 grid sm:grid-cols-3 gap-6">
+          <figure>
+            <div class="figure-frame fit-contain aspect-[4/3] p-3">
+              <img src="img/jet-engine-iso.jpg" alt="Isometric view of the jet engine CAD assembly: intake fan, compressor casing, combustion stage and exhaust nozzle" loading="lazy" />
+            </div>
+            <figcaption class="mt-2 text-xs text-white/35" data-i18n="pp1_cap1">Full assembly, isometric view.</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame fit-contain aspect-[4/3] p-3">
+              <img src="img/jet-engine-side.jpg" alt="Side view of the jet engine CAD assembly, intake on the right and variable nozzle on the left" loading="lazy" />
+            </div>
+            <figcaption class="mt-2 text-xs text-white/35" data-i18n="pp1_cap2">Side view: intake on the right, nozzle on the left.</figcaption>
+          </figure>
+          <figure>
+            <div class="figure-frame fit-contain aspect-[4/3] p-3">
+              <img src="img/jet-engine-front.jpg" alt="Front view of the jet engine looking into the intake: fan blades, nose cone and the ring of combustion cans and fasteners behind" loading="lazy" />
+            </div>
+            <figcaption class="mt-2 text-xs text-white/35" data-i18n="pp1_cap3">Front view, looking into the intake.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="mt-6">
+          <div class="figure-frame fit-contain aspect-[21/8] p-3">
+            <img src="img/jet-engine-nozzle.jpg" alt="The exhaust nozzle in its three assembly configurations: closed (convergent), working (cylindrical) and open (flared)" loading="lazy" />
+          </div>
+          <figcaption class="mt-2 text-xs text-white/35" data-i18n="pp1_cap4">Variable-geometry nozzle in its three configurations: closed, working and open.</figcaption>
+        </figure>
+
+        <p class="mt-6 text-white/50 text-sm leading-relaxed" data-i18n="pp1_d">
+          A complete jet engine modelled from scratch as a CAD exercise: intake fan and nose cone, three axial compressor sections, an annular combustion stage with its cans and fuel ports, a multi-stage turbine on the main shaft and bearings, and a variable-geometry exhaust nozzle whose petals are moved by lever linkages. The assembly has three configurations — closed, working and open — that switch the nozzle between convergent, cylindrical and flared. About 60 custom parts organised in nine sub-assemblies, fully mated, with the fasteners driven by circular patterns.
+        </p>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-white/40">
+          <span class="border border-white/10 rounded-full px-3 py-1">SOLIDWORKS</span>
+          <span class="border border-white/10 rounded-full px-3 py-1">Assembly design</span>
+          <span class="border border-white/10 rounded-full px-3 py-1">Turbomachinery</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- ============ PUBLICATIONS ============ -->
   <section id="publications" class="border-t border-white/5 py-24">
     <div class="max-w-6xl mx-auto px-6">
@@ -602,6 +659,16 @@
       p2_s2:"VES — FEM Analyst",
       p2_cap2:"The team with VES Mark I at the European Rocketry Challenge 2024.",
       p2_credit:"Images: PoliTo Rocket Team.",
+      pp_h:"Personal projects",
+      pp_sub:"Things I build on my own time, because I want to understand how they work.",
+      pp1_tag:"SOLIDWORKS · September 2025",
+      pp1_t:"Jet engine — full CAD assembly, from the nose cone to the nozzle",
+      pp1_cap1:"Full assembly, isometric view.",
+      pp1_cap2:"Side view: intake on the right, nozzle on the left.",
+      pp1_cap3:"Front view, looking into the intake.",
+      pp1_cap4:"Variable-geometry nozzle in its three configurations: closed, working and open.",
+      pp1_d:"A complete jet engine modelled from scratch as a CAD exercise: intake fan and nose cone, three axial compressor sections, an annular combustion stage with its cans and fuel ports, a multi-stage turbine on the main shaft and bearings, and a variable-geometry exhaust nozzle whose petals are moved by lever linkages. The assembly has three configurations — closed, working and open — that switch the nozzle between convergent, cylindrical and flared. About 60 custom parts organised in nine sub-assemblies, fully mated, with the fasteners driven by circular patterns.",
+      nav_personal:"Personal",
       edu_courses_l:"Main courses:", edu_thesis_l:"Thesis:",
       edu_msc_when:"Sep 2024 – Mar 2027 (expected) · Turin",
       edu_msc_t:"MSc Aerospace Engineering — Aerogasdynamics",
@@ -696,6 +763,16 @@
       p2_s2:"VES — Analista FEM",
       p2_cap2:"La squadra con VES Mark I all'European Rocketry Challenge 2024.",
       p2_credit:"Immagini: PoliTo Rocket Team.",
+      pp_h:"Progetti personali",
+      pp_sub:"Cose che costruisco nel tempo libero, per capire come funzionano.",
+      pp1_tag:"SOLIDWORKS · Settembre 2025",
+      pp1_t:"Motore a getto — assieme CAD completo, dall'ogiva all'ugello",
+      pp1_cap1:"Assieme completo, vista isometrica.",
+      pp1_cap2:"Vista laterale: presa d'aria a destra, ugello a sinistra.",
+      pp1_cap3:"Vista frontale, guardando dentro la presa d'aria.",
+      pp1_cap4:"Ugello a geometria variabile nelle tre configurazioni: chiuso, di lavoro e aperto.",
+      pp1_d:"Un motore a getto completo modellato da zero come esercizio CAD: fan e ogiva di presa d'aria, tre sezioni di compressore assiale, uno stadio di combustione anulare con i suoi tubi di fiamma e le porte carburante, una turbina multistadio sull'albero principale con i cuscinetti, e un ugello di scarico a geometria variabile con i petali mossi da un cinematismo a leve. L'assieme ha tre configurazioni — chiuso, di lavoro e aperto — che portano l'ugello da convergente a cilindrico a svasato. Circa 60 parti disegnate a mano organizzate in nove sottoassiemi, tutte vincolate, con la viteria gestita da ripetizioni circolari.",
+      nav_personal:"Personali",
       edu_courses_l:"Corsi principali:", edu_thesis_l:"Tesi:",
       edu_msc_when:"Set 2024 – Mar 2027 (prevista) · Torino",
       edu_msc_t:"Laurea magistrale in Ingegneria Aerospaziale — Aerogasdinamica",
